@@ -1,0 +1,47 @@
+{
+  "name": "MyTools by RonnyJohnTI",
+  "description": "Anti adblockers and others tools.",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab","scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+    "js": ["guiaevida.js"],
+    "matches": [
+    "http://guiavidaesaude.com/*",
+    "https://guiavidaesaude.com/*",
+    "https://animefire.net/*",
+    "https://vidadeatletas.com/*"
+    ]
+    },
+    {
+      "js": ["megaup.js"],
+      "matches": [
+        "https://bluemediafile.site/*",
+        "https://megaup.net/*"
+      ]
+    },
+    {
+      "js": ["noticiasdehoje.js"],
+      "matches": [
+        "https://noticiasdehoje.biz/*",
+        "http://noticiasdehoje.biz/*"
+      ]
+    },
+    {
+      "js": ["googletranslate.js"],
+      "matches": [
+        "https://translate.google.com/*"
+      ]
+    },
+    {
+      "js": ["guianoticiario.js"],
+      "matches": [
+        "https://guianoticiario.net/*"
+      ]
+    }
+  ]
+}
